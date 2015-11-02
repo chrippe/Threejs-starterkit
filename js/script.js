@@ -68,15 +68,15 @@ function init() {
 	var skyBox = new THREE.Mesh( skyBoxGeometry, skyBoxMaterial );
 	scene.add(skyBox);
 
-////////////
-// CUSTOM //
-////////////
+  ////////////
+  // CUSTOM //
+  ////////////
 
-var geometry = new THREE.SphereGeometry( 30, 32, 16 );
-var material = new THREE.MeshLambertMaterial( { color: 0x000088 } );
-mesh = new THREE.Mesh( geometry, material );
-mesh.position.set(0,40,0);
-scene.add(mesh);
+  var geometry = new THREE.SphereGeometry( 30, 32, 16 );
+  var material = new THREE.MeshLambertMaterial( { color: 0x000088 } );
+  mesh = new THREE.Mesh( geometry, material );
+  mesh.position.set(0,40,0);
+  scene.add(mesh);
 }
 
 function animate()
